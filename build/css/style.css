@@ -164,9 +164,9 @@
   .slider .owl-item.active.center .slider-card {
     transform: scale(1.15);
     opacity: 1;
-    background: #ff9966; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #ff5e62, #ff9966); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #e88f53; /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to bottom, #ff5e62, #ff9966); Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to bottom, #ff5e62, #ff9966); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
   }
   .slider-card {
@@ -213,3 +213,105 @@
   .owl-dots .owl-dot.active {
     background: #f44336 !important;
   }
+
+
+  .titulo-nosotros {
+    border-bottom: 5px solid #e88f53;
+    padding-bottom: 10px;
+    width: 222px;
+    margin: auto;
+  }
+
+  .regresar-inicio {
+      font-size: 20px;
+  }
+
+  .regresar-inicio a{
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+  }
+
+.regresar-inicio a i {
+    font-size: 20px;
+    color: #e88f53;
+    
+}
+
+/* slider vertical */
+
+.slider-vertical{
+  /* background-color: teal; */
+  max-width: 1400px;
+  color: #fff;
+
+  grid-template-columns: 35% 65%;
+  position: relative;
+  display: grid;
+
+}
+
+@media (max-width: 991px  ) {
+  .slider-vertical {
+      grid-template-columns: 1fr;
+  }
+}
+
+.slider-vertical .content_container{
+  padding: 40px;
+}
+
+.slider-vertical .slides{
+  overflow-y: auto;
+  max-height: 500px;
+  scrollbar-width: none;
+  overflow-y: hidden;
+}
+
+.slider-vertical .slides::-webkit-scrollbar{
+  display: none;
+}
+
+.slider-vertical .slides .slide{
+  /* min-height: calc(100% - 80px); */
+  min-height: 500px;
+  /* background-color: skyblue; */
+  display: flex;
+  padding: 40px;
+  color: #333;
+  /* align-items: center; */
+  /* height: 200px; */
+}
+
+.slider-vertical .slides .slide:nth-child(even){
+  /* background-color: palegreen; */
+}
+
+
+
+
+
+.slide_navigation a {
+  text-decoration: none;
+  color: #000;
+  background-color: #dcdcdc5e;
+  margin: 4px 0;
+  padding: 15px;
+}
+
+.slide_navigation  a.active {
+  font-weight: bold ;
+  background-color: #e88f53;
+}
+
+.inner_content h5 {
+  margin-bottom: 20px;
+}
+
+
+.personas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+
+}
